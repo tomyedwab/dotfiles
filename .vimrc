@@ -6,11 +6,15 @@ color koehler
 set noswapfile
 set nobackup
 
-" Highlight the current line
-set cursorline
+" Highlight the current line (current window only)
+autocmd WinLeave * set nocursorline
+autocmd WinEnter * set cursorline
 
 " Show line numbers
 set number
+
+" Show 80-character limit
+set colorcolumn=80
 
 " Incremental highlighting search, smart case
 set incsearch
@@ -24,9 +28,19 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" Don't deselect visual block after indent/unindent
+vnoremap < <gv
+vnoremap > >gv
+
 " Syntax highlighting & indent
 syntax on
 filetype plugin indent on
+
+" Quickfix window shortcuts
+map <C-Up> :cp<CR>
+map <C-Down> :cn<CR>
+map <C-Left> :colder<CR>
+map <C-Right> :cnewer<CR>
 
 " Install Pathogen
 call pathogen#infect()
