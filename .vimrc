@@ -31,5 +31,9 @@ filetype plugin indent on
 " Install Pathogen
 call pathogen#infect()
 
+" Powerline config
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
+
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
