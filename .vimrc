@@ -24,8 +24,12 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-" Syntax highlighting
+" Syntax highlighting & indent
 syntax on
+filetype plugin indent on
+
+" Install Pathogen
+call pathogen#infect()
 
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
