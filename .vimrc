@@ -35,5 +35,13 @@ call pathogen#infect()
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
+" NERDTree config
+let NERDChristmasTree = 1
+let NERDTreeHighlightCursorline = 1
+let NERDTreeIgnore = ['.handlebars.js$','.svn$','.git$','.hg$','.pyc$']
+let NERDTreeChDirMode  = 2
+let NERDTreeQuitOnOpen = 1
+map <F12> :NERDTreeToggle<cr>
+
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
