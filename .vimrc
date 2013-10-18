@@ -63,3 +63,11 @@ let g:ctrlp_working_path_mode = ''
 
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
+
+" Local settings are defined in ~/.vimlocalsettings, example contents:
+" let g:startup_project="PATH TO PROJECT DIR"
+
+source $HOME/.vimlocalsettings
+if exists("g:startup_project")
+    cd `=g:startup_project`
+endif
