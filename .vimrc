@@ -43,5 +43,9 @@ let NERDTreeChDirMode  = 2
 let NERDTreeQuitOnOpen = 1
 map <F12> :NERDTreeToggle<cr>
 
+" Ctrl-P config
+set wildignore+=*.pyc,*.old,*.bak,*.handlebars.js,*.orig,*.py.orig,*/genfiles/*,genfiles/*
+let g:ctrlp_working_path_mode = ''
+
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
