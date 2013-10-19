@@ -28,6 +28,9 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" Make system clipboard the default put/yank register
+set clipboard=unnamed
+
 " Don't deselect visual block after indent/unindent
 vnoremap < <gv
 vnoremap > >gv
@@ -56,6 +59,12 @@ let NERDTreeIgnore = ['.handlebars.js$','.svn$','.git$','.hg$','.pyc$']
 let NERDTreeChDirMode  = 2
 let NERDTreeQuitOnOpen = 1
 map <F12> :NERDTreeToggle<cr>
+
+" Tlist config
+nnoremap <silent> <F8> :TlistToggle<CR>
+let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Show_One_File = 1
+ let Tlist_Use_Right_Window = 1
 
 " Ctrl-P config
 set wildignore+=*.pyc,*.old,*.bak,*.handlebars.js,*.orig,*.py.orig,*/genfiles/*,genfiles/*
