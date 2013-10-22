@@ -45,6 +45,9 @@ map <C-Down> :cn<CR>
 map <C-Left> :colder<CR>
 map <C-Right> :cnewer<CR>
 
+" Shortcuts to favorite files
+map <C-S-S> :e ~/scratch<cr>
+
 " Install Pathogen
 call pathogen#infect()
 
