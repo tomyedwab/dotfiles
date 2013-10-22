@@ -76,6 +76,9 @@ let Tlist_Show_One_File = 1
 set wildignore+=*.pyc,*.old,*.bak,*.handlebars.js,*.orig,*.py.orig,*/genfiles/*,genfiles/*
 let g:ctrlp_working_path_mode = ''
 
+" Disable quickfix window for pyflakes (very annoying)
+let g:pyflakes_use_quickfix = 0
+
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 

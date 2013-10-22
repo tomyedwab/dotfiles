@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/pyflakes"]
 	path = .vim/bundle/pyflakes
 	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule ".vim/bundle/ack"]
+	path = .vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
