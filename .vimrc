@@ -28,9 +28,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-" Make system clipboard the default put/yank register
-set clipboard=unnamed
-
 " Don't deselect visual block after indent/unindent
 vnoremap < <gv
 vnoremap > >gv
@@ -47,6 +44,12 @@ map <C-Right> :cnewer<CR>
 
 " Shortcuts to favorite files
 map <C-S-S> :e ~/scratch<cr>
+
+" Ctrl-C/Ctrl-V/Ctrl-X for copy/paste/cut
+map <C-c> "+y
+map <C-x> "+ygvd
+map <C-v> "+p
+imap <C-v> <ESC>"+pa
 
 " Install Pathogen
 call pathogen#infect()
