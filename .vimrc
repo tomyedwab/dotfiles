@@ -1,6 +1,6 @@
 " Coloring tweaks
 set background=dark
-color koehler
+color tom
 
 " Don't create spammy files whenever a file is opened
 set noswapfile
