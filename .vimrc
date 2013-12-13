@@ -43,7 +43,11 @@ map <C-Left> :colder<CR>
 map <C-Right> :cnewer<CR>
 
 " Shortcuts to favorite files
-map <C-S-S> :e ~/scratch<cr>
+map <C-A-S> :e ~/scratch<cr>
+
+" Save using Ctrl-S
+map <C-S> :w<cr>
+imap <C-S> <ESC>:w<cr>a
 
 " Ctrl-C/Ctrl-V/Ctrl-X for copy/paste/cut
 map <C-c> "+y
