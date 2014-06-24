@@ -74,7 +74,11 @@ map <F12> :NERDTreeToggle<cr>
 nnoremap <silent> <F8> :TlistToggle<CR>
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Show_One_File = 1
- let Tlist_Use_Right_Window = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 50
+let Tlist_Close_On_Select = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Sort_Type = "name"
 
 " Ctrl-P config
 set wildignore+=*.pyc,*.old,*.bak,*.handlebars.js,*.orig,*.py.orig,*/genfiles/*,genfiles/*

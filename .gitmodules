@@ -31,3 +31,9 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule ".vim/bundle/indexer"]
+	path = .vim/bundle/indexer
+	url = git@github.com:vim-scripts/indexer.tar.gz.git
+[submodule ".vim/bundle/vimprj"]
+	path = .vim/bundle/vimprj
+	url = https://github.com/vim-scripts/vimprj
