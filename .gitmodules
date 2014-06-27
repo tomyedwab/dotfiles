@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/vimprj"]
 	path = .vim/bundle/vimprj
 	url = https://github.com/vim-scripts/vimprj
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
